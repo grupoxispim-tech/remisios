@@ -1,0 +1,4 @@
+/* Small overrides to ensure elements are visible when prefers-reduced-motion is enabled */
+@media (prefers-reduced-motion: reduce) {
+  .section, .gallery-item { opacity: 1 !important; transform: none !important; }
+}

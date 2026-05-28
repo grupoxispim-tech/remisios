@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180">
+  <rect width="180" height="180" x="0" fill="#C99B1F"/>
+  <rect width="180" height="180" x="180" fill="#0E7A73"/>
+  <rect width="180" height="180" x="360" fill="#FFFFFF"/>
+  <rect width="180" height="180" x="540" fill="#B21B1B"/>
+  <g font-family="Arial" font-size="14" fill="#fff">
+    <text x="90" y="160" text-anchor="middle">#C99B1F</text>
+    <text x="270" y="160" text-anchor="middle">#0E7A73</text>
+    <text x="450" y="160" text-anchor="middle" fill="#222">#FFFFFF</text>
+    <text x="630" y="160" text-anchor="middle">#B21B1B</text>
+  </g>
+</svg>

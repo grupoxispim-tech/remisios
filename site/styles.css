@@ -1,0 +1,77 @@
+:root{
+  --brand-red:#7B1212;
+  --cream:#F4E5D1;
+  --olive:#556B2F;
+  --graphite:#1F1F1F;
+  --dark:#111111;
+  --text:#1B1B1B;
+  --surface:#FBF3E9;
+  --shadow:0 22px 72px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;color:var(--text);margin:0;line-height:1.6;background:linear-gradient(180deg,rgba(251,243,233,0.92),rgba(251,243,233,0.92)),url(../hero-fundo.jpeg) center center/cover no-repeat;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body,button,input,textarea{font-family:inherit}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.site-header{background:var(--brand-red);color:#fff;box-shadow:0 6px 24px rgba(0,0,0,0.12)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 0}
+.logo{height:80px;max-height:80px;border:2px solid rgba(255,255,255,0.9);border-radius:14px;padding:6px;background:rgba(255,255,255,0.12);box-shadow:0 12px 34px rgba(0,0,0,0.12)}
+.nav{display:none;flex-direction:column;gap:14px}
+.nav a{color:var(--graphite);text-decoration:none;font-weight:600}
+.nav-toggle{display:block;background:transparent;border:0;color:#fff;font-size:22px;cursor:pointer}
+
+.hero{background:linear-gradient(180deg,rgba(0,0,0,0.24),rgba(0,0,0,0.08)),url(../hero-fundo.jpeg) top center/cover no-repeat;padding:48px 0;text-align:center;color:#fff;position:relative;overflow:hidden;min-height:70vh;display:flex;align-items:center}
+.hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.18);mix-blend-mode:normal}
+.hero > .container{position:relative;z-index:1}
+.hero h1{font-size:clamp(28px,6vw,42px);margin:0;font-family:'Georgia',serif;font-weight:700;letter-spacing:0.03em;text-transform:none;color:#fff}
+.lead{color:#fff;margin:12px auto 20px;max-width:720px;font-size:1.05rem}
+.btn{background:var(--brand-red);color:#fff;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:transform 0.25s ease,box-shadow 0.25s ease,background 0.25s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(0,0,0,0.12)}
+.btn.ghost{background:transparent;border:2px solid var(--brand-red);color:var(--brand-red)}
+
+.section{padding:32px 0;opacity:0;transform:translateY(18px);animation:fadeInUp 0.75s ease forwards}
+.section.alt{background:var(--cream)}
+.list{list-style:disc;margin-left:20px}
+.notes{margin-left:20px}
+.cta-row{display:flex;gap:12px;margin-top:18px}
+
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.menu-item{background:var(--surface);border-radius:8px;padding:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);border:1px solid rgba(0,0,0,0.05)}
+.muted{color:#777}
+
+.contact-form{display:grid;gap:8px;max-width:600px}
+.contact-form label{display:flex;flex-direction:column;font-size:14px}
+.contact-form input,.contact-form textarea{padding:8px;border:1px solid #ddd;border-radius:6px}
+
+.site-footer{background:var(--graphite);color:#fff;padding:18px 0;text-align:center}
+
+@media(max-width:800px){
+  .nav-toggle{display:block}
+}
+@media(min-width:801px){
+  .nav{display:flex;flex-direction:row;gap:18px}
+  .nav-toggle{display:none}
+}
+
+/* WhatsApp floating button */
+.whatsapp-fab{position:fixed;right:18px;bottom:18px;z-index:1000}
+.whatsapp-fab a{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--olive);color:#fff;text-decoration:none;font-size:22px;box-shadow:0 6px 18px rgba(0,0,0,0.18);animation:float 5s ease-in-out infinite;transition:transform 0.25s ease,box-shadow 0.25s ease}
+.whatsapp-fab a:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,0.2)}
+.whatsapp-fab a span{line-height:1}
+
+/* Improved accessibility and spacing */
+h1,h2,h3,.section-title{font-family:'Georgia',serif;font-weight:700;line-height:1.1;color:var(--graphite);letter-spacing:0.02em}
+.section-title{font-size:clamp(30px,4vw,42px);margin-bottom:24px;text-transform:none}
+.hero h1{font-size:clamp(28px,4vw,42px)}
+.hero{padding:56px 0}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *, .btn, .whatsapp-fab a{animation:none!important;transition:none!important}
+  /* Ensure sections and animated items remain visible when motion is reduced */
+  .section, .gallery-item{opacity:1!important;transform:none!important}
+}
+

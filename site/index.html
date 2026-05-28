@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Remisio's Pizza — Rodízio e Eventos</title>
+  <meta name="description" content="Rodízio de pizza para eventos: 3 horas, 30 sabores, mínimo 30 pessoas. Serviço apetitoso, acolhedor, profissional e exclusivo.">
+  <meta property="og:title" content="Remisio's Pizza — Rodízio e Eventos">
+  <meta property="og:description" content="Rodízio de pizza para eventos: 3 horas, 30 sabores. Serviço apetitoso, acolhedor, profissional e exclusivo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../logo16.jpg">
+  <meta name="theme-color" content="#7B1212">
+  <meta name="robots" content="index,follow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Remisio's Pizza — Rodízio e Eventos">
+  <meta name="twitter:description" content="Rodízio de pizza para eventos: 3 horas, 30 sabores. Serviço apetitoso, acolhedor, profissional e exclusivo.">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Remisio's Pizza",
+    "description": "Rodízio de pizza para eventos com 30 sabores. Atendimento apetitoso, acolhedor, profissional e exclusivo.",
+    "image": "../logo16.jpg",
+    "telephone": "+55SEUNUMEROAQUI",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sua Cidade",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Ter-Sex 11:00-23:00"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="../logo16.jpg" alt="Remisio's Pizza" class="logo">
+      <nav class="nav" id="nav">
+        <a href="#home">Início</a>
+        <a href="#rodizio">Rodízio</a>
+        <a href="#menu">Sabores</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Remisio's Pizza</h1>
+        <p class="lead">Apetitoso. Acolhedor. Profissional. Exclusivo.</p>
+        <a class="btn" href="#rodizio">Saiba mais</a>
+      </div>
+    </section>
+
+    <section id="rodizio" class="section">
+      <div class="container">
+        <h2>Rodízio de Pizza — Como funciona</h2>
+        <p>Desfrute de um rodízio profissional e acolhedor, com sabores exclusivos que fazem cada evento ainda mais apetitoso.</p>
+        <ul class="list">
+          <li><strong>Duração:</strong> 3 horas</li>
+          <li><strong>Sabores:</strong> 30 sabores (doces e salgadas)</li>
+          <li><strong>Levamos:</strong> pratos de vidro, talheres, guardanapos, garçom para servir e pizzaiolo, forno</li>
+          <li><strong>Idade:</strong> a partir de 10 anos paga inteira</li>
+          <li><strong>Pessoas:</strong> mínimo 30 — máximo 200</li>
+        </ul>
+
+        <h3>Observações</h3>
+        <ol class="notes">
+          <li>Com o cliente são: copos, bebidas e botijão de gás.</li>
+          <li>Levamos garçom.</li>
+        </ol>
+
+        <h3>Observações importantes</h3>
+        <ul class="notes">
+          <li>Se o cliente não puder levar botijão de gás, podemos utilizar o forno do local (especialmente em condomínios).</li>
+          <li>Se houver forno à lenha, podemos assar nele — lenha por conta do cliente.</li>
+          <li>A regra da criança que não paga não se aplica em eventos voltados somente ao público infantil.</li>
+        </ul>
+
+        <div class="cta-row">
+          <a class="btn" href="#contato">Solicitar orçamento</a>
+          <a class="btn ghost" href="#menu">Ver sabores</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section alt">
+      <div class="container">
+        <h2>Sabores Exclusivos para seu Evento</h2>
+        <p class="muted">Sabores apetitosos e cuidadosamente selecionados para criar uma experiência acolhedora e profissional.</p>
+        <div class="menu-grid">
+          <div class="menu-item"><h4>Calabresa</h4><p>Molho de tomate, calabresa, cebola, azeitona.</p></div>
+          <div class="menu-item"><h4>Margherita</h4><p>Tomate, mussarela, manjericão.</p></div>
+          <div class="menu-item"><h4>Frango com Catupiry</h4><p>Frango desfiado, catupiry, milho.</p></div>
+          <div class="menu-item"><h4>Chocolate</h4><p>Creme de chocolate, granulado.</p></div>
+          <div class="menu-item"><h4>Quatro Queijos</h4><p>Mussarela, parmesão, provolone, gorgonzola.</p></div>
+          <div class="menu-item"><h4>Portuguesa</h4><p>Presunto, ovos, ervilha, cebola.</p></div>
+        </div>
+        <p class="muted">Total: 30 sabores — consulte-nos para lista completa e opções personalizadas.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato & Reserva</h2>
+        <p>Solicite orçamento informando data, horário e número estimado de pessoas.</p>
+        <form id="contactForm" class="contact-form" action="#">
+          <label>Nome<input type="text" name="nome" required></label>
+          <label>Telefone<input type="tel" name="telefone" required></label>
+          <label>E-mail<input type="email" name="email"></label>
+          <label>Mensagem<textarea name="mensagem"></textarea></label>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <p style="margin-top:12px">Ou solicite orçamento rápido pelo WhatsApp:</p>
+        <p><a class="btn" id="waContact" href="https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1%20Remisio%27s%21%20Quero%20or%C3%A7amento%20para%20rod%C3%ADzio" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Remisio's Pizza — Rodízio para eventos • Mínimo 30 / Máximo 200 pessoas</p>      <p>Apetitoso | Acolhedor | Profissional | Exclusivo</p>      <p>© Remisio's — Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <div class="whatsapp-fab">
+    <a id="whatsFab" href="https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1%20Remisio%27s%21%20Quero%20or%C3%A7amento%20para%20rod%C3%ADzio" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+      <span>☏</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

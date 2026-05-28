@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="100%" height="100%" fill="#C99B1F"/>
+  <image href="../logo16.jpg" x="60" y="60" width="160" height="160"/>
+  <text x="260" y="150" font-family="Arial" font-size="44" fill="#fff" font-weight="700">Remisio's Pizza</text>
+
+  <g transform="translate(60,260)">
+    <text x="0" y="0" font-family="Arial" font-size="40" fill="#fff">Rodízio — 3 horas</text>
+    <text x="0" y="60" font-family="Arial" font-size="28" fill="#fff">30 sabores doces e salgadas</text>
+    <rect x="0" y="120" width="960" height="700" rx="20" fill="#fff"/>
+    <text x="40" y="180" font-family="Arial" font-size="28" fill="#2B2118">Inclui: pratos, talheres, guardanapos, garçom e pizzaiolo.</text>
+    <text x="40" y="230" font-family="Arial" font-size="28" fill="#2B2118">Levamos forno. Min: 30 / Máx: 200.</text>
+    <text x="40" y="320" font-family="Arial" font-size="26" fill="#B21B1B">Reserve via WhatsApp</text>
+  </g>
+
+  <text x="60" y="1860" font-family="Arial" font-size="16" fill="#fff">Contatos e lista completa no site</text>
+</svg>

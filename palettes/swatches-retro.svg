@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180">
+  <rect width="180" height="180" x="0" fill="#B58820"/>
+  <rect width="180" height="180" x="180" fill="#9A1010"/>
+  <rect width="180" height="180" x="360" fill="#F7E9D2"/>
+  <rect width="180" height="180" x="540" fill="#F2C9A0"/>
+  <rect width="180" height="180" x="720" fill="#3B2A20"/>
+  <g font-family="Arial" font-size="14" fill="#fff">
+    <text x="90" y="160" text-anchor="middle">#B58820</text>
+    <text x="270" y="160" text-anchor="middle">#9A1010</text>
+    <text x="450" y="160" text-anchor="middle" fill="#222">#F7E9D2</text>
+    <text x="630" y="160" text-anchor="middle" fill="#222">#F2C9A0</text>
+    <text x="810" y="160" text-anchor="middle">#3B2A20</text>
+  </g>
+</svg>

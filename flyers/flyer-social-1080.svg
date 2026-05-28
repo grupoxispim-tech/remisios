@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="100%" height="100%" fill="#F7E9D2"/>
+  <image href="../logo16.jpg" x="60" y="60" width="160" height="160"/>
+  <text x="260" y="150" font-family="Arial" font-size="48" fill="#B21B1B" font-weight="700">Remisio's Pizza</text>
+  <text x="260" y="210" font-family="Arial" font-size="28" fill="#2B2118">Rodízio para eventos — 3 horas • 30 sabores</text>
+
+  <g transform="translate(60,260)">
+    <rect x="0" y="0" width="960" height="560" rx="20" fill="#fff" stroke="#E6D7B8"/>
+    <text x="40" y="60" font-family="Arial" font-size="36" fill="#B21B1B">O que incluímos</text>
+    <text x="40" y="110" font-family="Arial" font-size="20" fill="#222">• Pratos, talheres, guardanapos</text>
+    <text x="40" y="140" font-family="Arial" font-size="20" fill="#222">• Garçom para servir e pizzaiolo</text>
+    <text x="40" y="170" font-family="Arial" font-size="20" fill="#222">• Levamos forno (ou usamos forno do local)</text>
+    <text x="40" y="220" font-family="Arial" font-size="28" fill="#2B2118">Mínimo 30 — Máximo 200 pessoas</text>
+
+    <a href="#contato"><rect x="40" y="300" width="220" height="56" rx="8" fill="#B21B1B"/></a>
+    <text x="150" y="340" font-family="Arial" font-size="18" fill="#fff" text-anchor="middle">Solicite Orçamento</text>
+  </g>
+
+  <text x="60" y="1040" font-family="Arial" font-size="16" fill="#666">Mais informações e lista completa de sabores no site</text>
+</svg>

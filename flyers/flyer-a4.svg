@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+  <rect width="100%" height="100%" fill="#F7E9D2"/>
+  <image href="../logo16.jpg" x="120" y="120" width="220" height="220"/>
+  <text x="360" y="200" font-family="Arial" font-size="72" fill="#B21B1B" font-weight="700">Remisio's Pizza</text>
+
+  <g transform="translate(120,360)">
+    <text x="0" y="0" font-family="Arial" font-size="40" fill="#2B2118">Rodízio para eventos</text>
+    <text x="0" y="60" font-family="Arial" font-size="28" fill="#2B2118">Duração: 3 horas • 30 sabores (doces e salgadas)</text>
+
+    <rect x="0" y="120" width="2240" height="520" rx="12" fill="#fff" stroke="#E6D7B8"/>
+    <text x="40" y="180" font-family="Arial" font-size="30" fill="#222">Incluímos: pratos de vidro, talheres, guardanapos, garçom para servir, pizzaiolo e forno.</text>
+    <text x="40" y="220" font-family="Arial" font-size="30" fill="#222">Observações: copos, bebidas e botijão de gás por conta do cliente. Caso não seja possível levar botijão, usamos forno do local.</text>
+
+    <text x="40" y="340" font-family="Arial" font-size="30" fill="#B21B1B">Pessoas: mínimo 30 — máximo 200. Crianças: a partir de 10 anos pagam inteira.</text>
+  </g>
+
+  <text x="120" y="3300" font-family="Arial" font-size="20" fill="#666">Solicite orçamento: site / WhatsApp</text>
+</svg>

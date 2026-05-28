@@ -1,26 +1,27 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Remisio's Pizza — Rodízio e Eventos</title>
-  <meta name="description" content="Rodízio de pizza para eventos: 3 horas, 30 sabores, mínimo 30 pessoas. Serviço apetitoso, acolhedor, profissional e exclusivo.">
-  <meta property="og:title" content="Remisio's Pizza — Rodízio e Eventos">
-  <meta property="og:description" content="Rodízio de pizza para eventos: 3 horas, 30 sabores. Serviço apetitoso, acolhedor, profissional e exclusivo.">
+  <title>Remisio's — Pizza Artesanal & Buffet Churrascaria</title>
+  <meta name="description" content="Pizzaria artesanal premium com rodízio 3h, 30 sabores e buffet de churrasco. Experiência apetitoso, acolhedora, profissional e exclusiva.">
+  <meta property="og:title" content="Remisio's — Pizza Artesanal & Churrascaria">
+  <meta property="og:description" content="Rodízio de pizza + Buffet de churrasco premium para eventos. Serviço apetitoso, acolhedor, profissional e exclusivo.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="../logo16.jpg">
   <meta name="theme-color" content="#7B1212">
   <meta name="robots" content="index,follow">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Remisio's Pizza — Rodízio e Eventos">
-  <meta name="twitter:description" content="Rodízio de pizza para eventos: 3 horas, 30 sabores. Serviço apetitoso, acolhedor, profissional e exclusivo.">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="twitter:title" content="Remisio's — Pizza Artesanal & Churrascaria">
+  <meta name="twitter:description" content="Rodízio de pizza + buffet de churrasco premium para eventos. Serviço apetitoso, acolhedor, profissional e exclusivo.">
+  <link rel="stylesheet" href="premium-styles.css">
+  <link rel="stylesheet" href="premium-fixes.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Remisio's Pizza",
-    "description": "Rodízio de pizza para eventos com 30 sabores. Atendimento apetitoso, acolhedor, profissional e exclusivo.",
+    "name": "Remisio's Pizza & Churrascaria",
+    "description": "Rodízio premium de pizza e buffet de churrasco para eventos com atendimento apetitoso, acolhedor, profissional e exclusivo.",
     "image": "../logo16.jpg",
     "telephone": "+55SEUNUMEROAQUI",
     "address": {
@@ -28,110 +29,330 @@
       "addressLocality": "Sua Cidade",
       "addressCountry": "BR"
     },
-    "openingHours": "Ter-Sex 11:00-23:00"
+    "openingHours": "Ter-Seg 11:00-23:00"
   }
   </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <img src="../logo16.jpg" alt="Remisio's Pizza" class="logo">
-      <nav class="nav" id="nav">
+  <header class="navbar">
+    <div class="container nav-inner">
+      <img src="../logo16.jpg" alt="Remisio's Pizza" class="nav-logo">
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+      <nav class="nav-links" id="navLinks">
         <a href="#home">Início</a>
-        <a href="#rodizio">Rodízio</a>
-        <a href="#menu">Sabores</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#pizza">🍕 Pizza</a>
+        <a href="#churrasco">🍖 Churrascaria</a>
+        <a href="#galeria">Galeria</a>
         <a href="#contato">Contato</a>
       </nav>
-      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
     </div>
   </header>
 
   <main>
+    <!-- HERO SECTION -->
     <section id="home" class="hero">
-      <div class="container">
-        <h1>Remisio's Pizza</h1>
-        <p class="lead">Apetitoso. Acolhedor. Profissional. Exclusivo.</p>
-        <a class="btn" href="#rodizio">Saiba mais</a>
-      </div>
-    </section>
-
-    <section id="rodizio" class="section">
-      <div class="container">
-        <h2>Rodízio de Pizza — Como funciona</h2>
-        <p>Desfrute de um rodízio profissional e acolhedor, com sabores exclusivos que fazem cada evento ainda mais apetitoso.</p>
-        <ul class="list">
-          <li><strong>Duração:</strong> 3 horas</li>
-          <li><strong>Sabores:</strong> 30 sabores (doces e salgadas)</li>
-          <li><strong>Levamos:</strong> pratos de vidro, talheres, guardanapos, garçom para servir e pizzaiolo, forno</li>
-          <li><strong>Idade:</strong> a partir de 10 anos paga inteira</li>
-          <li><strong>Pessoas:</strong> mínimo 30 — máximo 200</li>
-        </ul>
-
-        <h3>Observações</h3>
-        <ol class="notes">
-          <li>Com o cliente são: copos, bebidas e botijão de gás.</li>
-          <li>Levamos garçom.</li>
-        </ol>
-
-        <h3>Observações importantes</h3>
-        <ul class="notes">
-          <li>Se o cliente não puder levar botijão de gás, podemos utilizar o forno do local (especialmente em condomínios).</li>
-          <li>Se houver forno à lenha, podemos assar nele — lenha por conta do cliente.</li>
-          <li>A regra da criança que não paga não se aplica em eventos voltados somente ao público infantil.</li>
-        </ul>
-
-        <div class="cta-row">
-          <a class="btn" href="#contato">Solicitar orçamento</a>
-          <a class="btn ghost" href="#menu">Ver sabores</a>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Pizza Artesanal Feita no Forno a Lenha</h1>
+        <p class="hero-subtitle">A experiência apetitoso e acolhedora que você busca, com atendimento profissional e toque exclusivo.</p>
+        <div class="hero-cta">
+          <a href="#churrasco" class="btn btn-primary">🍖 Ver Buffet</a>
+          <a href="https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1%20Remisio%27s%21%20Quero%20or%C3%A7amento" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">📲 WhatsApp</a>
+        </div>
+        <div class="hero-info">
+          <div class="info-badge">⏰ 11h-23h</div>
+          <div class="info-badge">⭐ 4.9/5 Google</div>
         </div>
       </div>
     </section>
 
-    <section id="menu" class="section alt">
+    <!-- SOBRE PIZZARIA -->
+    <section id="sobre" class="section sobre">
       <div class="container">
-        <h2>Sabores Exclusivos para seu Evento</h2>
-        <p class="muted">Sabores apetitosos e cuidadosamente selecionados para criar uma experiência acolhedora e profissional.</p>
-        <div class="menu-grid">
-          <div class="menu-item"><h4>Calabresa</h4><p>Molho de tomate, calabresa, cebola, azeitona.</p></div>
-          <div class="menu-item"><h4>Margherita</h4><p>Tomate, mussarela, manjericão.</p></div>
-          <div class="menu-item"><h4>Frango com Catupiry</h4><p>Frango desfiado, catupiry, milho.</p></div>
-          <div class="menu-item"><h4>Chocolate</h4><p>Creme de chocolate, granulado.</p></div>
-          <div class="menu-item"><h4>Quatro Queijos</h4><p>Mussarela, parmesão, provolone, gorgonzola.</p></div>
-          <div class="menu-item"><h4>Portuguesa</h4><p>Presunto, ovos, ervilha, cebola.</p></div>
+        <div class="sobre-grid">
+          <div class="sobre-img">
+            <img src="../equipe-ingredientes.jpeg" alt="Equipe Remisio's" loading="lazy">
+          </div>
+          <div class="sobre-text">
+            <h2>Sobre Remisio's</h2>
+            <p class="tagline">Tradição acolhedora, atendimento profissional e sabores exclusivos em cada pizza.</p>
+            <ul class="highlights">
+              <li><strong>🔥 Forno a Lenha</strong> — Temperatura ideal para massa artesanal</li>
+              <li><strong>🌱 Ingredientes Frescos</strong> — Selecionados diariamente</li>
+              <li><strong>👨‍🍳 Massa Caseira</strong> — Fermentação lenta</li>
+              <li><strong>🧀 Molho Artesanal</strong> — Receita própria</li>
+              <li><strong>⏱️ Atendimento Ágil</strong> — Sem demoras</li>
+            </ul>
+            <p class="cta-text">Desde 2010 trazendo autenticidade italiana para sua mesa, com serviços apetitosos, acolhedores, profissionais e exclusivos.</p>
+          </div>
         </div>
-        <p class="muted">Total: 30 sabores — consulte-nos para lista completa e opções personalizadas.</p>
       </div>
     </section>
 
-    <section id="contato" class="section">
+    <!-- PIZZA RODÍZIO -->
+    <section id="pizza" class="section pizza-section alt-bg">
       <div class="container">
-        <h2>Contato & Reserva</h2>
-        <p>Solicite orçamento informando data, horário e número estimado de pessoas.</p>
-        <form id="contactForm" class="contact-form" action="#">
-          <label>Nome<input type="text" name="nome" required></label>
-          <label>Telefone<input type="tel" name="telefone" required></label>
-          <label>E-mail<input type="email" name="email"></label>
-          <label>Mensagem<textarea name="mensagem"></textarea></label>
-          <button class="btn" type="submit">Enviar</button>
-        </form>
-        <p style="margin-top:12px">Ou solicite orçamento rápido pelo WhatsApp:</p>
-        <p><a class="btn" id="waContact" href="https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1%20Remisio%27s%21%20Quero%20or%C3%A7amento%20para%20rod%C3%ADzio" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a></p>
+        <h2 class="section-title">🍕 Rodízio de Pizza</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Inclui</h3>
+            <ul>
+              <li>✓ 3 horas</li>
+              <li>✓ 30 sabores (doces + salgadas)</li>
+              <li>✓ Pratos, talheres, guardanapos</li>
+              <li>✓ Garçom para servir</li>
+              <li>✓ Pizzaiolo</li>
+              <li>✓ Levamos forno</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Condições</h3>
+            <ul>
+              <li>👥 Min: 30 | Máx: 200</li>
+              <li>👶 Até 9 anos: grátis</li>
+              <li>👧 A partir de 10: inteira</li>
+              <li>📋 Sem pré-pagamento</li>
+              <li>🎉 Eventos variados</li>
+              <li>📍 No domicílio</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Observações</h3>
+            <ul>
+              <li>🥤 Cliente: copos, bebidas</li>
+              <li>🔥 Cliente: botijão de gás</li>
+              <li>💡 Forno local ou a lenha</li>
+              <li>📞 Orçamento grátis</li>
+              <li>🌙 Terça-domingo</li>
+              <li>⭐ 4.9/5 avaliação</li>
+            </ul>
+          </div>
+        </div>
+        <a href="https://wa.me/55SEUNUMEROAQUI?text=Quero%20or%C3%A7amento%20para%20rod%C3%ADzio%20de%20pizza" class="btn btn-primary cta-bottom" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+      </div>
+    </section>
+
+    <!-- CHURRASCARIA BUFFET -->
+    <section id="churrasco" class="section churrasco-section alt-bg">
+      <div class="container">
+        <h2 class="section-title">🍖 Buffet de Churrasco</h2>
+        <div class="churrasco-grid">
+          <div class="churrasco-col">
+            <h3>O Que Inclui</h3>
+            <div class="churrasco-list">
+              <h4>Carnes Premium</h4>
+              <ul>
+                <li>Alcatra macia</li>
+                <li>Contra-Filé suculento</li>
+                <li>Coração temperado</li>
+                <li>Coxinha da asa</li>
+                <li>Kaftá recheada</li>
+                <li>Pernil assado</li>
+                <li>Linguiça Toscana</li>
+              </ul>
+            </div>
+            <div class="churrasco-list">
+              <h4>Acompanhamentos</h4>
+              <ul>
+                <li>Arroz branco fresco</li>
+                <li>Feijão preto temperado</li>
+                <li>Maionese caseira</li>
+                <li>Vinagrete refrescante</li>
+                <li>Farofa (bacon c/ banana)</li>
+                <li>Saladas variadas</li>
+                <li>Pão da casa quentinho</li>
+              </ul>
+            </div>
+            <div class="churrasco-list">
+              <h4>Sobremesa</h4>
+              <ul>
+                <li>Banana com creme de leite</li>
+              </ul>
+            </div>
+          </div>
+          <div class="churrasco-col">
+            <h3>Condições</h3>
+            <ul class="conditions">
+              <li>⏱️ <strong>4 horas</strong> de evento</li>
+              <li>👥 <strong>Min:</strong> 25 pessoas</li>
+              <li>👥 <strong>Máx:</strong> 200 pessoas</li>
+              <li>👶 <strong>Até 9 anos:</strong> grátis</li>
+              <li>✓ Levamos carvão</li>
+              <li>✓ Churrasqueira (opcional)</li>
+              <li>✓ Garçom profissional</li>
+              <li>✓ Pratos, talheres, bandejas</li>
+              <li>🥤 Cliente: copos, bebidas</li>
+              <li>🔥 Cliente: lenha (forno próprio)</li>
+              <li>📍 Atendemos domicílio</li>
+              <li>🌙 Terça-domingo</li>
+            </ul>
+            <a href="https://wa.me/55SEUNUMEROAQUI?text=Or%C3%A7amento%20Churrasco" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section galeria-section">
+      <div class="container">
+        <h2 class="section-title">Galeria — Qualidade em Cada Detalhe</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="../chef-pizza-camarao.jpeg" alt="Pizza artesanal no forno" loading="lazy">
+            <figcaption>Pizza artesanal no forno</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="../chefs-exibem-pizzas.jpeg" alt="Fatia de pizza premium" loading="lazy">
+            <figcaption>Fatia de pizza premium</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="../churrasco-prato.jpeg" alt="Buffet de churrasco" loading="lazy">
+            <figcaption>Buffet de churrasco</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="../pizza-massa-preparo.jpeg" alt="Pizza crocante com manjericão" loading="lazy">
+            <figcaption>Pizza crocante com manjericão</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="../massa-ingredientes.jpeg" alt="Buffet de churrasco" loading="lazy">
+            <figcaption>Buffet de churrasco</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="../pizzaiolo-com-pizzas.jpeg" alt="Churrasco servido" loading="lazy">
+            <figcaption>Churrasco servido</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="../pizza-cobertura-cebola.jpeg" alt="Mesa de evento" loading="lazy">
+            <figcaption>Mesa de evento</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="../pizzaiolo-pizza-doce-salgada.jpeg" alt="Ingredientes frescos" loading="lazy">
+            <figcaption>Ingredientes frescos</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section diferenciais alt-bg">
+      <div class="container">
+        <h2 class="section-title">Por Que Escolher Remisio's</h2>
+        <div class="diferenciais-grid">
+          <div class="diferencial-card">
+            <div class="icon">🔥</div>
+            <h4>Forno a Lenha</h4>
+            <p>900°C para massa crocante e macia</p>
+          </div>
+          <div class="diferencial-card">
+            <div class="icon">🧀</div>
+            <h4>Ingredientes Premium</h4>
+            <p>Selecionados diariamente</p>
+          </div>
+          <div class="diferencial-card">
+            <div class="icon">👨‍🍳</div>
+            <h4>Equipe Profissional</h4>
+            <p>Pizzaiolos e garçons experientes</p>
+          </div>
+          <div class="diferencial-card">
+            <div class="icon">⏱️</div>
+            <h4>Atendimento Rápido</h4>
+            <p>Sem demoras, máxima eficiência</p>
+          </div>
+          <div class="diferencial-card">
+            <div class="icon">🎉</div>
+            <h4>Eventos Completos</h4>
+            <p>Levamos tudo: equipamento, pessoal</p>
+          </div>
+          <div class="diferencial-card">
+            <div class="icon">⭐</div>
+            <h4>Confiança Premium</h4>
+            <p>4.9/5 em avaliações</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contato-section">
+      <div class="container">
+        <h2 class="section-title">Solicite Seu Orçamento</h2>
+        <div class="contato-grid">
+          <div class="contato-info">
+            <h3>Entre em Contato</h3>
+            <div class="info-item">
+              <span class="icon">📱</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p><a href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener noreferrer">Conversar agora</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">📍</span>
+              <div>
+                <strong>Localização</strong>
+                <p>Rua da Pizzaria, 123 — Sua Cidade</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">🕐</span>
+              <div>
+                <strong>Horário</strong>
+                <p>Terça-Domingo: 11h-23h</p>
+              </div>
+            </div>
+          </div>
+          <form class="contato-form" id="contactForm">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="tel" placeholder="Seu telefone" required>
+            <input type="email" placeholder="Seu e-mail">
+            <textarea placeholder="Tipo de evento, data, pessoas" rows="4"></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>Remisio's Pizza — Rodízio para eventos • Mínimo 30 / Máximo 200 pessoas</p>      <p>Apetitoso | Acolhedor | Profissional | Exclusivo</p>      <p>© Remisio's — Todos os direitos reservados</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section footer-brand">
+        <img src="../logo16.jpg" alt="Remisio's Logo" class="footer-logo">
+        <p class="brand-tagline">Pizza artesanal feita no forno a lenha com paixão</p>
+      </div>
+      
+      <div class="footer-section footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#contato">📞 Contato</a></li>
+          <li><a href="https://instagram.com/remisiospizza" target="_blank" rel="noopener noreferrer">📸 Instagram</a></li>
+          <li><a href="https://facebook.com/remisiospizza" target="_blank" rel="noopener noreferrer">👍 Facebook</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-info">
+        <h4>Horário de Funcionamento</h4>
+        <p>📅 Terça à Domingo<br>🕐 11h00 - 23h00</p>
+      </div>
+
+      <div class="footer-section footer-social">
+        <h4>Nos Acompanhe</h4>
+        <div class="social-links">
+          <a href="https://instagram.com/remisiospizza" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-icon">📸</a>
+          <a href="https://facebook.com/remisiospizza" target="_blank" rel="noopener noreferrer" title="Facebook" class="social-icon">👍</a>
+          <a href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="social-icon">💬</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Remisio's Pizza. Todos os direitos reservados. | <a href="#politica">Política de Privacidade</a></p>
     </div>
   </footer>
-  <div class="whatsapp-fab">
-    <a id="whatsFab" href="https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1%20Remisio%27s%21%20Quero%20or%C3%A7amento%20para%20rod%C3%ADzio" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
-      <span>☏</span>
-    </a>
-  </div>
 
-  <script src="script.js"></script>
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" title="WhatsApp">💬</a>
+
+  <script src="premium.js"></script>
 </body>
 </html>
-
